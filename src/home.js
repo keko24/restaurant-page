@@ -1,0 +1,42 @@
+export default function home()
+{
+	const element = document.createElement('div');
+	element.setAttribute('id', 'home-page');
+	const headingContainer = document.createElement('div');
+	const heading = document.createElement('h1');
+	heading.innerHTML = "Electric Bar";
+	headingContainer.classList.add('heading-container');
+	headingContainer.appendChild(heading);
+	const descriptionContainer = document.createElement('div');
+	const description = document.createElement('p');
+	description.innerHTML = 'Welcome to the official website of The Electric Bar. We are a bunch of highly devoted electrical engineering students who decided to open an electrically themed bar, a bar where anyone can come to have fun, chill, and even study. The bar is located 50 meters west from the engineering campus near the campus store. ' + "Also students get a 20% discount on everything, you just need to show us your student ID card.";
+	descriptionContainer.classList.add('description-container');
+	descriptionContainer.appendChild(description);
+	const workingHoursContainer = document.createElement('div');
+	const workingHours = document.createElement('h2');
+	workingHours.innerHTML = 'Working hours:';
+	const workingHoursList = document.createElement('ul');
+	const workingHoursItem1 = document.createElement('li');
+	const workingHoursItem2 = document.createElement('li');
+	const workingHoursItem3 = document.createElement('li');
+	workingHoursItem1.innerHTML = 'Monday - Friday: 09:00 - 20:00'; 
+	workingHoursItem2.innerHTML = 'Saturday: 10:00 - 18:00';
+	workingHoursItem3.innerHTML = 'Sunday: Closed';
+	workingHoursList.appendChild(workingHoursItem1);
+	workingHoursList.appendChild(workingHoursItem2);
+	workingHoursList.appendChild(workingHoursItem3);
+	workingHoursContainer.appendChild(workingHours);
+	workingHoursContainer.appendChild(workingHoursList);
+	const locatContainer = document.createElement('div');
+	const locatHead = document.createElement('h2');
+	const locat = document.createElement('p');
+	locatHead.innerHTML = 'Location';
+	locat.innerHTML = 'Nikola Tesla Street No. 24-5';
+	locatContainer.appendChild(locatHead);
+	locatContainer.appendChild(locat);
+	element.appendChild(headingContainer);
+	element.appendChild(descriptionContainer);
+	element.appendChild(workingHoursContainer);
+	element.appendChild(locatContainer);
+	return element;
+}
