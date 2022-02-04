@@ -38,6 +38,10 @@ export default function menu()
 	electricGinDiv.appendChild(electricGinDesc);
 	electricGinDiv.appendChild(myElecGin);
 	electricGinContainer.appendChild(electricGinDiv);
+	const ginPrice = document.createElement('p');
+	ginPrice.classList.add('price');
+	ginPrice.innerHTML = 'Price: 500 EERs';
+	electricGinContainer.appendChild(ginPrice);
 	element.appendChild(electricGinContainer);
 	const ohmsWhiskeyContainer = document.createElement('div');
 	ohmsWhiskeyContainer.classList.add('menu-items');
@@ -55,6 +59,10 @@ export default function menu()
 	ohmsWhiskeyDiv.appendChild(ohmsWhiskeyDesc);
 	ohmsWhiskeyDiv.appendChild(myWhiskey);
 	ohmsWhiskeyContainer.appendChild(ohmsWhiskeyDiv);
+	const whiskeyPrice = document.createElement('p');
+	whiskeyPrice.classList.add('price');
+	whiskeyPrice.innerHTML = 'Price: 700 EERs';
+	ohmsWhiskeyContainer.appendChild(whiskeyPrice);
 	element.appendChild(ohmsWhiskeyContainer);
 	const kirchoffsBeerContainer = document.createElement('div');
 	kirchoffsBeerContainer.classList.add('menu-items');
@@ -72,6 +80,10 @@ export default function menu()
 	kirchoffsBeerDiv.appendChild(kirchoffsBeerDesc);
 	kirchoffsBeerDiv.appendChild(myBeer);
 	kirchoffsBeerContainer.appendChild(kirchoffsBeerDiv);
+	const beerPrice = document.createElement('p');
+	beerPrice.classList.add('price');
+	beerPrice.innerHTML = 'Price: 300 EERs';
+	kirchoffsBeerContainer.appendChild(beerPrice);
 	element.appendChild(kirchoffsBeerContainer);
 	const teslasCocktailContainer = document.createElement('div');
 	teslasCocktailContainer.classList.add('menu-items');
@@ -89,6 +101,10 @@ export default function menu()
 	teslasCocktailDiv.appendChild(teslasCocktailDesc);
 	teslasCocktailDiv.appendChild(myCocktail);
 	teslasCocktailContainer.appendChild(teslasCocktailDiv);
+	const cocktailPrice = document.createElement('p');
+	cocktailPrice.classList.add('price');
+	cocktailPrice.innerHTML = 'Price: 600 EERs';
+	teslasCocktailContainer.appendChild(cocktailPrice);
 	element.appendChild(teslasCocktailContainer);
 	const foodContainer = document.createElement('div');
 	foodContainer.classList.add('type-container');
@@ -112,6 +128,10 @@ export default function menu()
 	threephaseSandwichDiv.appendChild(threephaseSandwichDesc);
 	threephaseSandwichDiv.appendChild(mySandwich);
 	threephaseSandwichContainer.appendChild(threephaseSandwichDiv);
+	const sandwichPrice = document.createElement('p');
+	sandwichPrice.classList.add('price');
+	sandwichPrice.innerHTML = 'Price: 400 EERs';
+	threephaseSandwichContainer.appendChild(sandwichPrice);
 	element.appendChild(threephaseSandwichContainer);
 	const theHighVoltageBurgerContainer = document.createElement('div');
 	theHighVoltageBurgerContainer.classList.add('menu-items');
@@ -129,6 +149,10 @@ export default function menu()
 	theHighVoltageBurgerDiv.appendChild(theHighVoltageBurgerDesc);
 	theHighVoltageBurgerDiv.appendChild(myBurger);
 	theHighVoltageBurgerContainer.appendChild(theHighVoltageBurgerDiv)
+	const burgerPrice = document.createElement('p');
+	burgerPrice.classList.add('price');
+	burgerPrice.innerHTML = 'Price: 600 EERs';
+	theHighVoltageBurgerContainer.appendChild(burgerPrice);
 	element.appendChild(theHighVoltageBurgerContainer);
 	const dessertsContainer = document.createElement('div');
 	dessertsContainer.classList.add('type-container');
@@ -153,6 +177,10 @@ export default function menu()
 	pnpCheesecakeDiv.appendChild(pnpCheesecakeDesc);
 	pnpCheesecakeDiv.appendChild(myCheesecake);
 	pnpCheesecakeContainer.appendChild(pnpCheesecakeDiv);
+	const cheesecakePrice = document.createElement('p');
+	cheesecakePrice.classList.add('price');
+	cheesecakePrice.innerHTML = 'Price: 400 EERs';
+	pnpCheesecakeContainer.appendChild(cheesecakePrice);
 	element.appendChild(pnpCheesecakeContainer);
 	return element;
 }

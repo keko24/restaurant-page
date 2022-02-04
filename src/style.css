@@ -70,6 +70,9 @@ button {
 
 .menu-items
 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 30vw;
 	height: 50vh;
 	border: 5px solid #2871cc;
@@ -87,7 +90,7 @@ button {
 }
 
 .menu-image {
-	width: 50rem;
-	height: 50rem;
+	width: 15vw;
+	height: 30vh;
 	border-radius: 10px;
 }
